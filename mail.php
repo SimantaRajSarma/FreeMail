@@ -25,7 +25,7 @@ try {
 
 	// Modify the email content to include form data
 	$mail->Subject = 'Hi ' . $name;
-	$mail->Body = "<h4> Message: $message</h4>";
+	$mail->Body = $message;
 	// Other mail settings
 
 	// Add recipient email addresses (you can customize this based on your needs)
