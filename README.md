@@ -36,7 +36,10 @@ App Passwords
 
 Set a App password and copy it.
 
-Paste the Generated App Password in your `` 
+Paste the Generated App Password in `` $mail->Password = 'your app password'; `` in the `` mail.php file `` and you are good to go.
+
+
+Note: Don't Spam anyone :)
 
 
 
