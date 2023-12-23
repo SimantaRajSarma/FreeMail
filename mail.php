@@ -18,8 +18,8 @@ try {
 	$mail->isSMTP();										 
 	$mail->Host	 = 'smtp.gmail.com';					// Use Gmail SMTP server
 	$mail->SMTPAuth = true;							 
-	$mail->Username = 'simantarajsarma07@gmail.com';			// Your Gmail email address
-	$mail->Password = 'gtdx tvwl sgnt uksw';					// Your Gmail password
+	$mail->Username = 'example@gmail.com';			// Your Gmail email address
+	$mail->Password = 'your app password';					// Your App password
 	$mail->SMTPSecure = 'tls';							 
 	$mail->Port	 = 587; 
 
@@ -28,11 +28,8 @@ try {
 	$mail->Body = "Name: $name<br>Email: $email<br>Message: $message";
 	// Other mail settings
 
-	// Set the sender's email address dynamically
-	$mail->setFrom('arupsarmah21@gmail.com', 'Dr. Arup Sarmah');
-
 	// Add recipient email addresses (you can customize this based on your needs)
-	$mail->addAddress('simantarajsarma@gmail.com', 'SIMANTA');
+	$mail->addAddress('example@gmail.com', 'SIMANTA');
 	$mail->addAddress($email, $name);
 
 
@@ -46,7 +43,5 @@ try {
     // Redirect or handle non-POST requests as needed
     echo "Invalid request method.";
 }
-
-
 
 ?>
